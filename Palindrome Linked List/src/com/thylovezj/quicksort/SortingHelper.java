@@ -25,6 +25,8 @@ public class SortingHelper {
             InsertSort.sort(arr);
         else if (sortname.equals("InsertSortI"))
             InsertSort.sortI(arr);
+        else if (sortname.equals("quickSort"))
+            QuickSort.quickSort(arr);
         long end = System.nanoTime();
         double time = (end-start)/1000000000.0;
 
