@@ -1,7 +1,5 @@
 package com.leetcode.zigzaglevelorder;
 
-import com.leetcode.addtwonumbers.ListNode;
-
 import java.util.*;
 
 public class Solution {

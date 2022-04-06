@@ -1,7 +1,5 @@
 package com.leetcode.flatten;
 
-import com.leetcode.addtwonumbers.ListNode;
-
 public class Solution {
     public Node flatten(Node head) {
         Node res = head;

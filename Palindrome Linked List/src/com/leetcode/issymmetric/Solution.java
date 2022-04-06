@@ -1,7 +1,5 @@
 package com.leetcode.issymmetric;
 
-import com.leetcode.addtwonumbers.ListNode;
-
 import java.util.*;
 
 /***
