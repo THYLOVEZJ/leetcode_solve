@@ -8,6 +8,8 @@ import java.util.Random;
  * 在面对近乎有序的数组时，速度会非常慢，且有可能产生栈溢出
  */
 public class QuickSort {
+    public static Random random = new Random();
+
     public QuickSort() {
     }
 
@@ -27,7 +29,7 @@ public class QuickSort {
          * 该段代码即为了消除有序数组的影响
          */
         //生成[l,r]之间的随机索引
-        int p = new Random().nextInt(r - l + 1);
+        int p = random.nextInt(r - l + 1);
         swap(arr, p, l);
 
 
