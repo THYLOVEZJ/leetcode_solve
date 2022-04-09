@@ -1,6 +1,6 @@
 package com.thylovezj.array;
 
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student> {
     private int score;
     private String name;
 
@@ -30,11 +30,11 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student o) {
-        return this.score-o.score;
+        return this.score - o.score;
     }
 
     @Override
     public String toString() {
-        return String.format("name: %s,score: %d",name,score);
+        return String.format("name: %s,score: %d", name, score);
     }
 }

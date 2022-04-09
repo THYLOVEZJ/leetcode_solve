@@ -4,7 +4,7 @@ package com.leetcode.sumnumbers;
 import java.util.ArrayList;
 import java.util.List;
 
-/***
+/***Leetcode129
  * 给定一个二叉树的根节点 root ，树中每个节点都存放有一个 0 到 9 之间的数字。
  *
  * 每条从根节点到叶节点的路径都代表一个数字：
@@ -39,20 +39,20 @@ public class Solution {
     public int sumNumbersI(TreeNode root) {
 
         int res = 0;
-        dfs(root,"");
+        dfs(root, "");
         for (String s : list) {
             res = res + Integer.valueOf(s);
         }
         return res;
     }
 
-    public void dfs(TreeNode node,String bs) {
+    public void dfs(TreeNode node, String bs) {
         if (node == null) return;
-        bs = bs+node.val;
+        bs = bs + node.val;
         if (node.left == null && node.right == null) {
             list.add(bs.toString());
         }
-        dfs(node.left,bs);
-        dfs(node.right,bs);
+        dfs(node.left, bs);
+        dfs(node.right, bs);
     }
 }
