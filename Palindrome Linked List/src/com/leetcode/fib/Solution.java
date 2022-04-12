@@ -43,4 +43,25 @@ public class Solution {
         }
         return dp[n];
     }
+
+    /**
+     * 但是对于上面的解法，我们的空间复杂度很高，实际上我们只需要关心前两个值的和即可
+     * 下面是状态压缩后的解法
+     */
+    public int fibIII(int n) {
+        if (n <= 1) return n;
+        /**
+         0 1 2 3 4
+         0 1 1 2 3
+         */
+        int pre = 0;
+        int cur = 1;
+        int sum = 0;
+        for (int i = 2; i < n + 1; i++) {
+            sum = pre + cur;
+            pre = cur;
+            cur = sum;
+        }
+        return sum;
+    }
 }
